@@ -23,5 +23,6 @@ public class ExemploLista extends Application {
         palco.setScene(cena);
         palco.show();
     }
+
 }
 

@@ -20,18 +20,32 @@
     </properties>
 
     <dependencies>
-        <!-- JavaFX Controls (botões, cenas, etc) -->
+        <!-- JavaFX Controls -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
 
-        <!-- FXML (se usar telas com XML) -->
+        <!-- FXML -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- Media -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- WebView -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>21</version>
         </dependency>
     </dependencies>
 
@@ -44,11 +58,11 @@
                 <version>0.0.8</version>
                 <configuration>
                     <!-- Ajusta pro nome da sua classe -->
-                    <mainClass>ExemploLista</mainClass>
+                    <mainClass>ExemploFileChooser</mainClass>
                 </configuration>
             </plugin>
 
-            <!-- Compiler plugin (garante Java 21 mesmo) -->
+            <!-- Compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
